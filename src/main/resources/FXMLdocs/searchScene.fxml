@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+
+<AnchorPane fx:id="root"
+            styleClass="root"
+            prefHeight="800.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.comFXML/1"
+            fx:controller="src.controller.SearchSceneController"
+            AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+            stylesheets="@/styles/main.css, @/styles/style.css">
+    <VBox AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+        <VBox styleClass="searchArea">
+            <HBox styleClass="mainSearch">
+                <TextField styleClass="searchField" fx:id="searchField" promptText="Search ..." />
+                <Button styleClass="icon-button, searchFieldIcon">
+                    <graphic>
+                        <Region styleClass="icon, search-icon"/>
+                    </graphic>
+                </Button>
+            </HBox>
+            <HBox fx:id="advancedSearch" styleClass="advancedSearch">
+                <ToggleButton fx:id="showMoviesButton" styleClass="showMediaButton" text="Movies" />
+                <ToggleButton fx:id="showSeriesButton" styleClass="showMediaButton" text="Series" />
+                <ChoiceBox fx:id="genreChoiceBox" styleClass="choiceBox"/>
+                <Pane fx:id="spacer" styleClass="spacer"/>
+                <Label text="Sort by:"/>
+                <ChoiceBox fx:id="sortChoiceBox" styleClass="choiceBox" value="Title">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Title" />
+                            <String fx:value="Year" />
+                            <String fx:value="Rating" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+            </HBox>
+        </VBox>
+        <ScrollPane styleClass="searchSceneScrollPane">
+            <FlowPane styleClass="searchContentPane" fx:id="flowPane">
+                <!-- Dynamic MediaVBoxes -->
+            </FlowPane>
+        </ScrollPane>
+    </VBox>
+</AnchorPane>

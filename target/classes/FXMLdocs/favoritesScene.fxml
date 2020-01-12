@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="root" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.comFXML"
+            fx:controller="src.controller.FavoritesSceneController"
+            stylesheets="@/styles/main.css"
+            prefHeight="800.0" prefWidth="800.0"
+            AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+
+    <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="searchSceneScrollPane" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+        <FlowPane styleClass="searchContentPane" fx:id="flowPane">
+            <!-- Dynamic MediaVBoxes -->
+        </FlowPane>
+    </ScrollPane>
+
+</AnchorPane>

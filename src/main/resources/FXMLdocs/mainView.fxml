@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<BorderPane fx:id="root"
+            maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.comFXML/1"
+            stylesheets="@/styles/main.css, @/styles/style.css">
+    <center>
+        <GridPane BorderPane.alignment="CENTER" styleClass="split">
+            <columnConstraints>
+                <ColumnConstraints minWidth="100" prefWidth="100" />
+                <ColumnConstraints hgrow="ALWAYS" minWidth="500" prefWidth="100" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints vgrow="ALWAYS"/>
+            </rowConstraints>
+            <VBox styleClass="nav" GridPane.columnIndex="0" alignment="CENTER">
+                <VBox VBox.vgrow="ALWAYS" alignment="CENTER">
+                    <ToggleButton styleClass="navButton, icon-button" prefHeight="100" prefWidth="100" fx:id="searchBtn" onAction="#searchBtn">
+                        <graphic>
+                            <Region styleClass="icon, search-icon"/>
+                        </graphic>
+                    </ToggleButton>
+                    <ToggleButton styleClass="navButton, icon-button" prefHeight="100" prefWidth="100" fx:id="plusBtn" onAction="#plusBtn">
+                        <graphic>
+                            <Region styleClass="icon, heart-icon"/>
+                        </graphic>
+                    </ToggleButton>
+                    <ToggleButton styleClass="navButton, icon-button" prefHeight="100" prefWidth="100" fx:id="accountBtn" onAction="#accountBtn">
+                        <graphic>
+                            <Region styleClass="icon, account-icon"/>
+                        </graphic>
+                    </ToggleButton>
+                </VBox>
+                <Label fx:id="accountUserName" styleClass="accountUserName" alignment="BASELINE_CENTER"/>
+            </VBox>
+            <AnchorPane fx:id="contentPane" styleClass="content" GridPane.columnIndex="1">
+                <!-- scenes -->
+            </AnchorPane>
+        </GridPane>
+    </center>
+</BorderPane>

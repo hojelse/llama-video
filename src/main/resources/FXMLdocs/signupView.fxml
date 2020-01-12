@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane fx:id="root" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.comFXML/1"
+            fx:controller="src.controller.SignupViewController"
+            stylesheets="@/styles/main.css">
+   <center>
+      <VBox styleClass="loginSignupForm" alignment="CENTER" BorderPane.alignment="CENTER" maxWidth="200">
+         <HBox styleClass="loginout" alignment="CENTER">
+            <Region styleClass="icon, account-icon"/>
+            <Region styleClass="icon, plus"/>
+         </HBox>
+         <TextField fx:id="userNameTextField" promptText="Username" />
+         <PasswordField fx:id="passwordPasswordField" promptText="Password" />
+         <Button fx:id="signupButton" mnemonicParsing="false" text="create account"/>
+         <Button fx:id="loginInstead" text="Already have a user? Login here!" styleClass="signupInstead"/>
+         <Label fx:id="status"/>
+      </VBox>
+   </center>
+</BorderPane>

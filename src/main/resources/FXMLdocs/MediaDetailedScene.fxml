@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.shape.Path?>
+<?import javafx.scene.shape.SVGPath?>
+<AnchorPane fx:id="root"
+            styleClass="root"
+            prefHeight="800.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.comFXML/1"
+            AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+            stylesheets="@/styles/main.css, @/styles/style.css">
+<ScrollPane styleClass="MediaDetailedSceneScrollPane" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+    <VBox fx:id="playWindowVBox" styleClass="MediaDetailedScene">
+        <HBox alignment="CENTER_LEFT">
+            <Button fx:id="backButton" styleClass="backButton">
+                <graphic>
+                    <Region styleClass="icon"/>
+                </graphic>
+            </Button>
+        </HBox>
+        <VBox fx:id="playWindow" styleClass="playWindow" >
+            <!-- her indsættes mediaview-->
+        </VBox>
+        <ToggleButton fx:id="playPauseToggleButton" styleClass="playpause">
+            <graphic>
+                <Group fx:id="playPauseToggleButtonGraphic">
+                    <SVGPath content="M2.5,0 l 17.5,10 0,20 -17.5,10 z"/>
+                    <SVGPath content="M20,10 l 20,10 -20,10 z"/>
+                </Group>
+            </graphic>
+        </ToggleButton>
+        <HBox fx:id="titleBar">
+            <Text fx:id="titleText" styleClass="mediaDetailsTitle"/>
+            <Pane fx:id="spacer" styleClass="spacer"/>
+            <ToggleButton fx:id="favToggleButton" styleClass="favButton">
+                <graphic>
+                    <Region styleClass="icon"/>
+                </graphic>
+            </ToggleButton>
+        </HBox>
+        <Text fx:id="ratingText" styleClass="mediaDetailsMeta"/>
+        <Text fx:id="yearText" styleClass="mediaDetailsMeta"/>
+        <Text fx:id="genreText" styleClass="mediaDetailsMeta"/>
+        <!-- Her indsættes knapper til valg af episoder hvis media er seasonable -->
+    </VBox>
+</ScrollPane>
+</AnchorPane>

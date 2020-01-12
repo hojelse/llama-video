@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.shape.Circle?>
+<BorderPane fx:id="root" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.comFXML/1"
+            fx:controller="src.controller.LoginViewController"
+            stylesheets="@/styles/main.css, @/styles/style.css">
+   <center>
+      <StackPane>
+         <Group fx:id="alpaca" styleClass="alpaca">
+            <SVGPath fx:id="circle" style="-fx-fill: #666" content="M427.51,446.09a143,143,0,1,1-143-143A143,143,0,0,1,427.51,446.09Z"/>
+            <Group fx:id="earGroup">
+               <SVGPath fx:id="rightEar" style="-fx-fill: #f2f2f2" content="M301.47,392.32c3.11-4,56.33-76.51,59.2-80.67s8.81-7.33,13.18-5.76,6.51,11.39,7.74,21.7,5.94,32.7,2.12,44.13-6.27,22.11-23.78,41.47C334,413.92,311.9,410.64,301.47,392.32Z"/>
+               <SVGPath fx:id="rightEar2" style="-fx-fill: #bababa" content="M324.42,409.75c-9.85-3.05-17.82-8.4-22.94-17.43,1.84-2.38,21.55-29.18,37.75-51.27C333,350.44,314.37,406.89,324.42,409.75Z"/>
+               <SVGPath fx:id="rightEar3" style="-fx-fill: #bababa" content="M384.92,353.64c.49,6.81.35,13.38-1.21,18.08-3.82,11.42-6.27,22.11-23.78,41.47-16.61,17.72-18.05,0-26-1.27C351.16,414.22,384.92,365.65,384.92,353.64Z"/>
+               <SVGPath fx:id="leftEar" style="-fx-fill: #f2f2f2" content="M266,378.83c-4.26-2.73-78.75-53.16-82.85-56.11s-10.76-4-14.34-1-2.31,12.91,0,23,5.38,32.79,12.81,42.27S195,405.75,218,418.11C242.63,410.09,262.36,399.59,266,378.83Z"/>
+               <SVGPath fx:id="leftEar2" style="-fx-fill: #bababa" content="M218,418.11S190,327.2,183.18,322.72c20,13.68,82.85,56.11,82.85,56.11S263.57,406.91,218,418.11Z"/>
+            </Group>
+            <SVGPath fx:id="head" style="-fx-fill: #bababa" content="M209,589.45V441.87c0-31.65,33.94-67.14,74.17-67.14s76.87,39.21,76.87,61.5V589.45Z"/>
+            <SVGPath fx:id="leftEye" style="-fx-fill: #5b5b5b" content="M238.61,451.35a7.18,7.18,0,1,1,7.17-7.18A7.19,7.19,0,0,1,238.61,451.35Z"/>
+            <SVGPath fx:id="rightEye" style="-fx-fill: #5b5b5b" content="M331.23,451.35a7.18,7.18,0,1,1,7.18-7.18A7.18,7.18,0,0,1,331.23,451.35Z"/>
+            <Group fx:id="mouthGroup">
+               <SVGPath fx:id="muzzle" style="-fx-fill: #efefef" content="M284.54,524.63c20,0,33.5-15.12,33.5-24.86V451.35c0-5.13-5.64-14.35-11.28-14.35H262.69c-6.66,0-11.53,6.66-11.53,12v51.5C251.16,509.77,264.24,524.63,284.54,524.63Z"/>
+               <SVGPath fx:id="mouth" style="-fx-fill: #5b5b5b" content="M299.65,508.26a20.39,20.39,0,0,1-30.22,0,.7.7,0,0,1,.51-1.17H281v-8.88l-8.31-8.31a3.49,3.49,0,0,1,4.93-4.93l6.93,6.93,6.93-6.93a3.49,3.49,0,1,1,4.93,4.93L288,498.33v8.76h11.12A.7.7,0,0,1,299.65,508.26Z"/>
+            </Group>
+            <Group fx:id="arms">
+               <SVGPath style="-fx-fill: #efefef" content="M201.9,468.12A24.53,24.53,0,0,1,216,499.83l-17.61,45.79A24.53,24.53,0,0,1,152.58,528l17.6-45.79A24.54,24.54,0,0,1,201.9,468.12Z"/>
+               <SVGPath style="-fx-fill: #f4f4f4" content="M214.7,434.83a24.53,24.53,0,0,1,14.09,31.71l-17.61,45.79a24.53,24.53,0,0,1-45.8-17.61L183,448.93A24.54,24.54,0,0,1,214.7,434.83Z"/>
+               <SVGPath style="-fx-fill: #5e5e5e" content="M257.28,451.16a18,18,0,0,1-18,18H203.36a18,18,0,0,1,0-35.94H239.3A18,18,0,0,1,257.28,451.16Z"/>
+               <SVGPath style="-fx-fill: #efefef" content="M370.74,457.34a24.54,24.54,0,0,0-12.94,32.2l19.25,45.13a24.54,24.54,0,0,0,45.14-19.25L403,470.29A24.55,24.55,0,0,0,370.74,457.34Z"/>
+               <SVGPath style="-fx-fill: #f4f4f4" content="M356.75,424.53a24.54,24.54,0,0,0-12.94,32.2l19.25,45.13a24.54,24.54,0,0,0,45.14-19.25L389,437.48A24.55,24.55,0,0,0,356.75,424.53Z"/>
+               <SVGPath style="-fx-fill: #5e5e5e" content="M314.5,448.11A18,18,0,0,0,335.11,463l35.47-5.71a18,18,0,0,0-5.71-35.49l-35.48,5.71A18,18,0,0,0,314.5,448.11Z"/>
+            </Group>
+            <SVGPath fx:id="background" style="-fx-fill: #555" content="M471.65,418.11V696.88H100.38V418.11h43.93a143,143,0,1,0,280.47,0Z"/>
+            <SVGPath fx:id="hair" style="-fx-fill: #555" content="M234.52,385.4c-1.93,4.71,3.93,15,11.13,15.13s13-1.43,17.14,4.86,16.41,4.95,21.71,1.54,6.1-10.6,11.5-12.06,12.3,3.45,16.22-1.21,11.47-1.6,16.14-6.11-8-19.94-15.4-16.51-11.72,3.56-15.57-.56-7.75-7-12.31-5-8.5,9.55-13.26,10.68-7.8-9.64-13.43-8.3-6.16,6.11-10.62,10.58S236.45,380.69,234.52,385.4Z"/>
+         </Group>
+         <VBox styleClass="loginSignupForm" alignment="CENTER" BorderPane.alignment="CENTER" maxWidth="200">
+            <HBox styleClass="loginout" style="-fx-opacity: 0">
+               <Region styleClass="icon, account-icon"/>
+            </HBox>
+            <TextField fx:id="userNameTextField" promptText="Username" />
+            <PasswordField fx:id="passwordPasswordField" promptText="Password" />
+            <Button fx:id="loginButton" mnemonicParsing="false" text="login"/>
+            <Button fx:id="signupInstead" text="create an account" styleClass="signupInstead"/>
+            <Label fx:id="status"/>
+         </VBox>
+      </StackPane>
+
+   </center>
+</BorderPane>

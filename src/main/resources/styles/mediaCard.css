@@ -1,0 +1,37 @@
+.mediaCard {
+    -fx-background-radius: 5;
+    -fx-fill: transparent;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+}
+
+.mediaCard > * {
+    -fx-fill: #ccc;
+}
+
+.mediaCard:hover {
+    -fx-background-color: #666;
+    -fx-effect: dropshadow(gaussian,#22222244,20,0,0,5);
+    -fx-cursor: hand;
+}
+
+.mediaCard > ImageView {
+    -fx-opacity: 0.9;
+}
+
+.mediaCard:hover > ImageView {
+    -fx-opacity: 1;
+    -fx-cursor: hand;
+}
+
+.mediaTitle {
+    -fx-fill: #fff;
+    -fx-font-weight: 700;
+    -fx-font-size: 10pt;
+}
+
+.mediaDetailsTitle {
+    -fx-fill: #fff;
+    -fx-font-weight: 700;
+    -fx-font-size: 30pt;
+}

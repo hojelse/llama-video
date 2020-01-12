@@ -1,0 +1,388 @@
+.choiceBox .menu-item{
+    -fx-text-fill: white;
+}
+
+.choiceBox .menu{
+    -fx-pref-width: 100;
+    -fx-min-width: 100;
+}
+
+.playWindow {
+    -fx-background-color: black;
+    -fx-min-height: 500px;
+    -fx-pref-width: 100px;
+    -fx-alignment: center;
+    -fx-fit-to-width: true;
+}
+
+.mediaView {
+    -fx-fill-width: true;
+    -fx-border-color: red;
+}
+
+.mediaDetailsTitle {
+    -fx-font-size: 20pt;
+    -fx-text-fill: white;
+    -fx-fill: white;
+}
+
+.playWindowStatusText {
+    -fx-text-fill: black;
+    -fx-font-size: 20pt;
+}
+
+.MediaDetailedSceneScrollPane{
+    -fx-fit-to-width: true;
+}
+
+.MediaDetailedScene {
+    -fx-background-color: -fx-nuance2;
+    -fx-fit-to-width: true;
+    -fx-fit-to-height: true;
+    -fx-spacing: 10px;
+    -fx-padding: 40px;
+}
+
+.MediaDetailedScene > * {
+    -fx-text-fill: white;
+    -fx-fill: white;
+}
+
+.favScrollPane {
+    -fx-fit-to-width: true;
+    -fx-fit-to-height: true;
+}
+
+.choiceBox .menu-item:focused{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+
+
+.reachedEpisode:selected {
+    /*#888*/
+    -fx-background-color: orange;
+    -fx-border-color: #888;
+    -fx-effect: dropshadow(gaussian,#22222244,20,0,0,5);
+}
+
+
+.episode {
+    -fx-pref-width: 90px;
+    -fx-pref-height: 45px;
+
+    -fx-background-color: none;
+    -fx-border-style: solid;
+    -fx-border-radius: 2px;
+    -fx-border-color: #666;
+    -fx-text-fill: white;
+
+    -fx-cursor: hand;
+}
+
+.episode:selected {
+    -fx-background-color: #888;
+    -fx-border-color: #888;
+    -fx-effect: dropshadow(gaussian,#22222244,20,0,0,5);
+}
+
+.radio-button .radio .dot {
+    -fx-content-display: none;
+    -fx-opacity: 0;
+}
+
+.radio-button .radio {
+    -fx-opacity: 0;
+}
+
+.showMediaButton {
+    -fx-background-color: none;
+    -fx-border-style: solid;
+    -fx-border-radius: 2px;
+    -fx-border-color: #666;
+    -fx-text-fill: white;
+}
+
+.showMediaButton:selected {
+    -fx-background-color: #666;
+    -fx-border-style: none;
+    -fx-border-width: 1px;
+    -fx-border-radius: 2px;
+}
+
+.alpaca {
+    -fx-background-color: #222;
+    -fx-content-display: graphic-only;
+    -fx-scale-x: 0.5;
+    -fx-scale-y: 0.5;
+}
+
+.playpause {
+    -fx-background-color: none;
+    -fx-content-display: graphic-only;
+    -fx-scale-x: 0.5;
+    -fx-scale-y: 0.5;
+}
+
+.playpause > Group > * {
+    -fx-fill: #ddd;
+}
+
+.playpause:hover > Group > * {
+    -fx-fill: #eee;
+}
+
+.favButton {
+    -fx-content-display: graphic-only;
+    -fx-background-color: none;
+}
+
+.mediaDetailsMeta {
+    -fx-fill: #ddd;
+    -fx-text-fill: #ddd;
+}
+
+.favButton .icon {
+    -fx-shape: "m 33.780493,970.3622 c -11.63849,0 -18.78049,10.17801 -18.78049,18.52632 0,18.05128 20.51725,34.80698 35,45.47368 14.482764,-10.6667 34.999994,-27.4224 34.999994,-45.47368 0,-8.34831 -7.14198,-18.52632 -18.78046,-18.52632 -6.50001,0 -12.052864,5.1822 -16.219534,10.10527 -4.16666,-4.92307 -9.71959,-10.10527 -16.21951,-10.10527 z"
+}
+
+.favButton .icon {
+    -fx-background-color: none;
+    -fx-border-color: #ddd;
+    -fx-border-width: 2px;
+    -size: 20;
+    -fx-min-height: -size;
+    -fx-min-width: -size;
+    -fx-max-height: -size;
+    -fx-max-width: -size;
+}
+
+.favButton:selected .icon {
+    -fx-background-color: red;
+    -fx-border-color: none;
+}
+
+.backButton {
+    -fx-content-display: graphic-only;
+    -fx-background-color: none;
+}
+
+.backButton .icon {
+    -fx-shape: "M39.7,87.2 47.1,79.9 22.4,55.2 97.5,55.2 97.5,44.8 22.4,44.8 47.1,20.1 39.7,12.8 2.5,50";
+    -fx-background-color: none;
+    -fx-border-color: #ddd;
+    -fx-border-width: 2px;
+    -size: 20;
+    -fx-min-height: -size;
+    -fx-min-width: -size;
+    -fx-max-height: -size;
+    -fx-max-width: -size;
+}
+
+.seasonTitle {
+    -fx-fill: #ddd;
+    -fx-font-size: 20;
+    -fx-font-weight: 700;
+}
+
+.episodesFlowpane {
+    -fx-fit-to-width: true;
+}
+
+.root {
+    -fx-background-color: #555;
+}
+
+ScrollPane > .viewport {
+    -fx-background-color: transparent;
+}
+
+AnchorPane {
+    -fx-background-color: #555;
+}
+
+.split {
+    -fx-background-color: #555;
+}
+
+BorderPane {
+    -fx-background-color: #555;
+}
+
+Label {
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+    -fx-background-color: #555;
+    -fx-text-fill: white;
+}
+
+Button {
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+    -fx-background-color: #777;
+    -fx-text-fill: white;
+}
+
+.nav {
+    -fx-background-color: #333;
+}
+
+.navButton {
+    -fx-background-color: none;
+}
+
+.loginout {
+    -fx-background-color: none;
+    -fx-content-display: graphic-only;
+    -fx-padding: 0 0 20 0;
+    -fx-alignment: center;
+}
+
+.loginout .icon {
+    -fx-background-color: #888;
+    -size: 30;
+    -fx-min-height: -size;
+    -fx-min-width: -size;
+    -fx-max-height: -size;
+    -fx-max-width: -size;
+}
+
+.navButton:hover {
+    -fx-cursor: hand;
+    -fx-border-width: 0 0 0 5;
+    -fx-border-color: #ff5a39;
+}
+
+.navButton:selected .icon {
+    -fx-background-color: #fff;
+    -size: 22;
+}
+
+.icon-button {
+    -fx-content-display: graphic-only;
+}
+
+.searchFieldIcon {
+    -fx-background-color: #555;
+}
+
+
+.icon-button .icon {
+    -fx-background-color: #888;
+    -size: 22;
+    -fx-min-height: -size;
+    -fx-min-width: -size;
+    -fx-max-height: -size;
+    -fx-max-width: -size;
+}
+
+.searchSceneScrollPane{
+    -fx-fit-to-width: true;
+}
+
+.icon-button:hover .icon {
+    -fx-cursor: hand;
+    -fx-background-color: #fff;
+    -size: 22;
+}
+
+.mainSearch {
+    -fx-padding: 20;
+}
+
+.advancedSearch {
+    -fx-padding: 0 35 0 35;
+    -fx-spacing: 10;
+}
+
+.searchArea {
+    -fx-background-color: #555;
+    -fx-padding: 20 0;
+}
+
+.search-icon {
+    -fx-shape: "M15.75,15.05l-.7.7a.5.5,0,0,1-.71,0L10.69,12.1a5.46,5.46,0,1,1,1.41-1.41l3.65,3.65a.5.5,0,0,1,0,.71Zm-8.17-4A3.49,3.49,0,1,0,4.1,7.58,3.49,3.49,0,0,0,7.58,11.07Z";
+}
+
+.home-icon {
+    -fx-shape: "M12,25H8.4a1,1,0,0,1-.7-.29,1,1,0,0,1,0-1.42l15.88-16h0a1,1,0,0,1,1.42,0l15.36,16a1,1,0,0,1,.28.69,1,1,0,0,1-1,1H36l-.06,13a1,1,0,0,1-1,1H28V30.09A1.11,1.11,0,0,0,26.88,29H21.13A1.11,1.11,0,0,0,20,30.09V39H13a1,1,0,0,1-1-1Z"
+}
+
+.account-icon {
+    -fx-shape: "M302.04 0c86.79,0 157.17,70.38 157.17,157.18 0,43.04 -17.39,83.67 -48.42,113.46 104.3,39.34 178.25,135.34 196.45,237.74l-65.27 0c-23.71,-110.87 -122.86,-194.75 -239.93,-194.03 -117.08,-0.72 -216.22,83.16 -239.94,194.03l-62.1 0c20.18,-108.31 86.81,-197.58 193.28,-237.74 -31.03,-29.79 -48.42,-70.42 -48.42,-113.46 0,-86.8 70.38,-157.18 157.18,-157.18zm0 250.89c51.63,0.34 93.72,-42.28 93.72,-93.71 0,-51.78 -41.95,-93.73 -93.72,-93.73 -51.78,0 -93.73,41.95 -93.73,93.73 0,51.43 42.09,94.05 93.73,93.71z";
+}
+
+.tv-icon {
+    -fx-shape: "M56,17H28.88l5.94-8.42a1,1,0,1,0-1.64-1.15L27,16.22l-4.18-5.8a1,1,0,0,0-1.39-.23,1,1,0,0,0-.23,1.4L25.09,17H8a6,6,0,0,0-6,6V51a6,6,0,0,0,6,6H56a6,6,0,0,0,6-6V23A6,6,0,0,0,56,17ZM47,46a6,6,0,0,1-6,6H13a6,6,0,0,1-6-6V28a6,6,0,0,1,6-6H41a6,6,0,0,1,6,6Zm6.5,0a3,3,0,1,1,3-3A3,3,0,0,1,53.5,46Zm0-10a4,4,0,1,1,4-4A4,4,0,0,1,53.5,36Z";
+}
+
+.heart-icon {
+    -fx-shape: "m 33.780493,970.3622 c -11.63849,0 -18.78049,10.17801 -18.78049,18.52632 0,18.05128 20.51725,34.80698 35,45.47368 14.482764,-10.6667 34.999994,-27.4224 34.999994,-45.47368 0,-8.34831 -7.14198,-18.52632 -18.78046,-18.52632 -6.50001,0 -12.052864,5.1822 -16.219534,10.10527 -4.16666,-4.92307 -9.71959,-10.10527 -16.21951,-10.10527 z"
+}
+
+.filter-icon {
+    -fx-shape: "M5273.1,2400.1v-2c0-2.8-5-4-9.7-4s-9.7,1.3-9.7,4v2c0,1.8,0.7,3.6,2,4.9l5,4.9c0.3,0.3,0.4,0.6,0.4,1v6.4     c0,0.4,0.2,0.7,0.6,0.8l2.9,0.9c0.5,0.1,1-0.2,1-0.8v-7.2c0-0.4,0.2-0.7,0.4-1l5.1-5C5272.4,2403.7,5273.1,2401.9,5273.1,2400.1z      M5263.4,2400c-4.8,0-7.4-1.3-7.5-1.8v0c0.1-0.5,2.7-1.8,7.5-1.8c4.8,0,7.3,1.3,7.5,1.8C5270.7,2398.7,5268.2,2400,5263.4,2400z";
+}
+
+.plus {
+    -fx-scale-x: 0.4;
+    -fx-scale-y: 0.4;
+    -fx-shape: "M38.5,49.5c0.9,0,1.7-0.8,1.7-1.7v-8.5c0-0.9-0.8-1.7-1.7-1.7H27.3V26.4c0-0.9-0.8-1.7-1.7-1.7h-8.5     c-0.9,0-1.7,0.8-1.7,1.7v11.2H4.2c-0.9,0-1.7,0.8-1.7,1.7v8.5c0,0.9,0.8,1.7,1.7,1.7h11.2v11.2c0,0.9,0.8,1.7,1.7,1.7h8.5     c0.9,0,1.7-0.8,1.7-1.7V49.5H38.5z";
+}
+
+FlowPane {
+    -fx-padding: 20px;
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+    -fx-background-color: #555;
+    -fx-hgap: 20px;
+    -fx-vgap: 20px;
+}
+
+.content {
+    -fx-fit-to-height: true;
+    -fx-fit-to-width: true;
+    -fx-background-color: #555;
+}
+
+.accountUserName {
+    -fx-background-color: #3a3a3a;
+    -fx-padding: 5;
+    -fx-fill: #ddd;
+    -fx-text-fill: #ddd;
+    -fx-text-alignment: center;
+}
+
+.searchField {
+    -fx-background-color: #555;
+    -fx-font-size: 20pt;
+    -fx-text-fill: #fff;
+}
+
+.passwordInvalid {
+    -fx-border-color: red;
+}
+
+.userNameInvalid {
+    -fx-border-color: red;
+}
+
+.signupInstead{
+    -fx-background-color: none;
+    -fx-text-fill: #aaa;
+}
+
+.signupInstead:hover {
+    -fx-text-fill: #ddd;
+    -fx-cursor: hand;
+}
+
+.searchVBox {
+    -fx-background-color: red;
+}
+
+.loginSignupForm {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
